@@ -92,7 +92,7 @@ print(laptops[0]["url"])
 #   Dell XPS ram: ["8GB", "16GB", "32GB", "64GB"]
 
 def print_laptop_data(laptop,topics):
-    if laptop == "Apple MAcbook pro":
+    if laptop == "Apple Macbook pro":
         computer = laptops[0]
     elif laptop == 'Dell XPS':
         computer = laptops[1]
