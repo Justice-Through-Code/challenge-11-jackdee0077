@@ -10,6 +10,7 @@ Our goal is to be able to parse this data with code, so that we can utilize it i
 """
 
 from pydoc_data.topics import topics
+from tkinter import N
 
 
 laptops = [
@@ -91,8 +92,9 @@ print(laptops[0]["url"])
 #   So, for instance:
 #   Dell XPS ram: ["8GB", "16GB", "32GB", "64GB"]
 
-def print_laptop_data(laptop,topics):
-    if laptop == "Apple Macbook pro":
+def print_laptop_data(laptop, topics):
+    computer = None
+    if laptop == "Apple Macbook Pro":
         computer = laptops[0]
     elif laptop == 'Dell XPS':
         computer = laptops[1]
@@ -136,7 +138,7 @@ laptops[0]["types"][1]["colors"].remove('space gray')
 laptops[0]['types'][1]['storage'].remove('1 TB SSD')
 
 # 3.2 TODO: Print out the Macbook Pro dictionary to see the changes.
-print(laptops)
+print(laptops[0]["types"][1])
 
 # BONUS TODO: Write a function called `get_price_range` that returns the minimum and maximum prices out of all the options.
 
