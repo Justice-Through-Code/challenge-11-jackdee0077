@@ -9,9 +9,6 @@ so the data has been ported in as is.
 Our goal is to be able to parse this data with code, so that we can utilize it in our code.
 """
 
-from pydoc_data.topics import topics
-from tkinter import N
-
 
 laptops = [
         {
@@ -138,7 +135,7 @@ laptops[0]["types"][1]["colors"].remove('space gray')
 laptops[0]['types'][1]['storage'].remove('1 TB SSD')
 
 # 3.2 TODO: Print out the Macbook Pro dictionary to see the changes.
-print(laptops[0]["types"][1])
+print(laptops[0])
 
 # BONUS TODO: Write a function called `get_price_range` that returns the minimum and maximum prices out of all the options.
 
