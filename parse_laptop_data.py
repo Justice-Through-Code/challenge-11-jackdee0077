@@ -93,12 +93,10 @@ def print_laptop_data(laptop, topics):
     computer = None
     if laptop == "Apple Macbook Pro":
         computer = laptops[0]
+
+        print(f'{laptops} {topics}: {computer["types"][0][topics]}')
     elif laptop == 'Dell XPS':
         computer = laptops[1]
-    else:
-        print('sorry,that computer is not available')
-        return
-
     print(f'{laptops} {topics}: {computer["types"][0][topics]}')
 
 
