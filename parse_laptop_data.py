@@ -88,16 +88,13 @@ print(laptops[0]["url"])
 #
 #   So, for instance:
 #   Dell XPS ram: ["8GB", "16GB", "32GB", "64GB"]
-
-def print_laptop_data(laptop, topics):
-    computer = None
-    if laptop == "Apple Macbook Pro":
+def print_laptop_data(laptop, topic):
+    if laptop == 'Apple Macbook Pro':
         computer = laptops[0]
-
-        print(f'{laptops} {topics}: {computer["types"][0][topics]}')
-    elif laptop == 'Dell XPS':
-        computer = laptops[1]
-    print(f'{laptops} {topics}: {computer["types"][0][topics]}')
+        print(f'{laptop} {topic}: {computer["types"][0][topic]}')
+    elif laptop == "Dell XPS":
+            computer = laptops[1]
+            print(f'{laptop} {topic}: {computer["types"][0][topic]}')
 
 
 
